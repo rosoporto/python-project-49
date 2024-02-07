@@ -5,24 +5,24 @@ from .cli import welcome_user
 
 
 MAX_ROUNDS = 3
-MIN_NUMBER = 1
-MAX_NUMBER = 9
+MIN_NUM = 1
+MAX_NUM = 9
 
 
 def calculation(math_operation):
-    first_number = random.randint(MAX_NUMBER, MAX_NUMBER * 2)
-    second_number = random.randint(MIN_NUMBER, MAX_NUMBER)
+    first_num = random.randint(MAX_NUM, MAX_NUM * 2)
+    second_num = random.randint(MIN_NUM, MAX_NUM)
     result = None
     match math_operation:
         case "+":
-            print(f"Question: {first_number} + {second_number}")
-            result = first_number + second_number
+            print(f"Question: {first_num} + {second_num}")
+            result = first_num + second_num
         case "-":
-            print(f"Question: {first_number} - {second_number}")
-            result = first_number - second_number
+            print(f"Question: {first_num} - {second_num}")
+            result = first_num - second_num
         case "*":
-            print(f"Question: {first_number} * {second_number}")
-            result = first_number * second_number
+            print(f"Question: {first_num} * {second_num}")
+            result = first_num * second_num
         case _:
             print("Other")
     return result
