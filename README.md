@@ -6,3 +6,7 @@
 
 ### Видео демонстрации игры «Калькулятор»
 [![asciicast](https://asciinema.org/a/636577.svg)](https://asciinema.org/a/636577)
+
+
+### Видео демонстрации игры «Наибольший общий делитель (НОД)»
+[![asciicast](https://asciinema.org/a/636826.svg)](https://asciinema.org/a/636826)
