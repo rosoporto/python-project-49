@@ -12,3 +12,6 @@
 
 ### Видео демонстрации игры «Арифметическая прогрессия»
 [![asciicast](https://asciinema.org/a/636925.svg)](https://asciinema.org/a/636925)
+
+### Видео демонстрации игры «Простое ли число?»
+[![asciicast](https://asciinema.org/a/636958.svg)](https://asciinema.org/a/636958)
