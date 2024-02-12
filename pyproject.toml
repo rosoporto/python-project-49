@@ -4,7 +4,18 @@ version = "0.1.0"
 description = "Project Brain Games"
 authors = ["rosoporto <rosoporto@yandex.ru>"]
 readme = "README.md"
+repository = "https://github.com/rosoporto/python-project-49.git"
 packages = [{include = "brain_games"},]
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "Framework :: Flake8",
+    "Intended Audience :: Education",
+    "Intended Audience :: Developers",
+    "License :: Free For Educational Use",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: Games/Entertainment :: Arcade",
+]
 
 
 [tool.poetry.dependencies]
