@@ -12,7 +12,11 @@ def is_even(num):
     return num % 2 == 0
 
 
+def check_num_on_even(num):
+    return "yes" if is_even(num) else "no"
+
+
 def run_even_game():
     random_num = randint(MIN_NUM, MAX_NUM)
-    verified_random_num = "yes" if is_even(random_num) else "no"
+    verified_random_num = check_num_on_even(random_num)
     return random_num, verified_random_num

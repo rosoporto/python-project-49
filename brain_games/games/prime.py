@@ -17,7 +17,11 @@ def is_prime(n):
     return True
 
 
+def check_num_on_prime(num):
+    return "yes" if is_prime(num) else "no"
+
+
 def run_even_game():
     random_num = randint(MIN_NUM, MAX_NUM)
-    check_num = "yes" if is_prime(random_num) else "no"
+    check_num = check_num_on_prime(random_num)
     return random_num, check_num
