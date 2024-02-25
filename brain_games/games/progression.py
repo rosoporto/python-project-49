@@ -7,21 +7,22 @@ MIN_NUM = 1
 MAX_NUM_PROGRESSION = 10
 
 
-def generate_progression():
-    start = randint(MIN_NUM, MAX_NUM_PROGRESSION)
-    diff = randint(MIN_NUM, MAX_NUM_PROGRESSION / 2)
-    progression = [start + diff * i for i in range(MAX_NUM_PROGRESSION)]
+def generate_progression(start, diff, max_num):
+    progression = [start + diff * i for i in range(max_num)]
     return progression
 
 
-def hide_num_and_generate_question(progression, missing_num):
-    missing_index = progression.index(missing_num)
-    progression[missing_index] = ".."
-    return ' '.join(list(map(str, progression)))
+def hide_num_and_generate_quest(progression, index_hide_num):
+    hide_num = progression[index_hide_num]
+    progression[index_hide_num] = ".."
+    return ' '.join(list(map(str, progression))), hide_num
 
 
 def run_even_game():
-    progression = generate_progression()
-    missing_num = choice(progression)
-    str_progression = hide_num_and_generate_question(progression, missing_num)
-    return str_progression, str(missing_num)
+    start = randint(MIN_NUM, MAX_NUM_PROGRESSION)
+    diff = randint(MIN_NUM, MAX_NUM_PROGRESSION / 2)
+    progression = generate_progression(start, diff, MAX_NUM_PROGRESSION)
+    index_missing_num = choice(range(len(progression)))
+    str_progression, hide_num = hide_num_and_generate_quest(progression,
+                                                            index_missing_num)
+    return str_progression, str(hide_num)
