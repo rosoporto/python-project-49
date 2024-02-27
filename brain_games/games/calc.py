@@ -2,13 +2,13 @@
 from random import randint, choice
 
 
-GAME_RULE = "What is the result of the expression?"
+RULE = "What is the result of the expression?"
 MATH_SIGNS = ("+", "-", "*")
 MIN_NUM = 1
 MAX_NUM = 100
 
 
-def run_even_game():
+def prepare_question_answer():
     num1, num2 = randint(MIN_NUM, MAX_NUM), randint(MIN_NUM, MAX_NUM / 2)
     math_sign = choice(MATH_SIGNS)
     expression = f"{num1} {math_sign} {num2}"
